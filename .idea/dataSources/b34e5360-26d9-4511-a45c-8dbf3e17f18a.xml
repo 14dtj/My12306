@@ -1,0 +1,220 @@
+<dataSource name="MySQL - my12306@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="my12306">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="cms" />
+    <schema id="3" name="fofquant" />
+    <schema id="4" name="gofit" />
+    <schema id="5" name="index_work" />
+    <schema id="6" name="information_schema" />
+    <schema id="7" name="knowledge" />
+    <schema id="8" name="mysql" />
+    <schema id="9" name="performance_schema" />
+    <schema id="10" name="sharing" />
+    <schema id="11" name="sys" />
+    <table id="12" parent="1" name="contact" />
+    <table id="13" parent="1" name="order" />
+    <table id="14" parent="1" name="route" />
+    <table id="15" parent="1" name="station" />
+    <table id="16" parent="1" name="user" />
+    <table id="17" parent="1" name="pass_by" />
+    <table id="18" parent="1" name="ticket_info" />
+    <column id="19" parent="12" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="20" parent="12" name="IdType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="21" parent="12" name="IdNum">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="22" parent="12" name="phone">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="23" parent="12" name="travellerType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="24" parent="12" name="vertified">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(255)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="25" parent="13" name="orderDate">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="26" parent="13" name="travelDate">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="27" parent="13" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="28" parent="13" name="trainNum">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="29" parent="13" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="30" parent="13" name="contactId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="31" parent="13" name="state">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="32" parent="13" name="price">
+      <mandatory>1</mandatory>
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="33" parent="13" name="travellerType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="34" parent="13" name="paymentType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="35" parent="13" name="paymentAccount">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="36" parent="13" name="seatType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="37" parent="13" name="seatNum">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="38" parent="13" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="39" parent="14" name="trainNum">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="40" parent="14" name="route">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="41" parent="14" name="PRIMARY">
+      <columns>trainNum</columns>
+      <primary>1</primary>
+    </key>
+    <column id="42" parent="15" name="city">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="43" parent="15" name="trainNum">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="44" parent="16" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="45" parent="16" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="46" parent="16" name="gender">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="47" parent="16" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="48" parent="16" name="IdType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="49" parent="16" name="IdNum">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="50" parent="16" name="country">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="51" parent="16" name="birth">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="52" parent="16" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="53" parent="16" name="email">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="54" parent="16" name="vertified">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="55" parent="16" name="travellerType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="56" parent="16" name="PRIMARY">
+      <columns>username</columns>
+      <primary>1</primary>
+    </key>
+    <column id="57" parent="17" name="ticketId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="58" parent="17" name="city">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="59" parent="18" name="trainNum">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="60" parent="18" name="departure">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="61" parent="18" name="destination">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="62" parent="18" name="seatType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="63" parent="18" name="price">
+      <mandatory>1</mandatory>
+      <data-type>decimal(10,2)|0</data-type>
+    </column>
+    <column id="64" parent="18" name="date">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="65" parent="18" name="remain">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="66" parent="18" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <key id="67" parent="18" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
